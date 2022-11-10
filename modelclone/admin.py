@@ -215,7 +215,8 @@ class ClonableModelAdmin(ModelAdmin):
         return self.render_change_form(request,
             context,
             form_url=form_url,
-            change=False
+            change=False,
+            add=True
         )
 
     def tweak_cloned_fields(self, fields):
